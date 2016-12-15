@@ -1,0 +1,15 @@
+
+.search-form .search-field {
+    border-radius: 3px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.search-form .search-submit {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#sidebar {
+    background-color: #00b9eb;
+}
