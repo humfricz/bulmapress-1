@@ -7,28 +7,28 @@
 
 		<div class="columns">
 			<div class="column">
-				<div class="notification is-info has-text-centered">
+				<div class="notification is-dark has-text-centered">
 					<p class="title">
 						1
 					</p>
 				</div>
 			</div>
 			<div class="column">
-				<div class="notification is-success has-text-centered">
+				<div class="notification is-dark has-text-centered">
 					<p class="title">
 						2
 					</p>
 				</div>
 			</div>
 			<div class="column">
-				<div class="notification is-warning has-text-centered">
+				<div class="notification is-dark has-text-centered">
 					<p class="title">
 						3
 					</p>
 				</div>
 			</div>
 			<div class="column">
-				<div class="notification is-danger has-text-centered">
+				<div class="notification is-dark has-text-centered">
 					<p class="title">
 						4
 					</p>
@@ -36,7 +36,7 @@
 			</div>
 		</div><!-- .columns -->
 
-		<nav class="level">
+		<nav class="level is-mobile">
 			<div class="level-item has-text-centered">
 				<a href="/" class="icon" aria-label="RSS"><i class="fa fa-rss" aria-hidden="true"></i></a>
 			</div>
