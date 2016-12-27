@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<div class="hero-body has-text-centered is-paddingless">
-    <div class="container" style="padding: 40px 20px; box-shadow: 0 1px 0 rgba(219, 219, 219, 0.3);">
-        <div class="title">
-            Search
+    <div class="hero-body has-text-centered is-paddingless">
+        <div class="container" style="padding: 40px 20px; box-shadow: 0 1px 0 rgba(219, 219, 219, 0.3);">
+            <div class="title">
+                Search
+            </div>
         </div>
     </div>
-</div>
 </section><!-- .hero -->
 
 <section class="section">
