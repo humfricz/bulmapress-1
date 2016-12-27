@@ -152,6 +152,9 @@
 #commentform label:not(:last-child) {
     margin-bottom: 5px;
 }
+#commentform #comment {
+    width: 100%;
+}
 #commentform #submit {
     -moz-appearance: none;
     -moz-box-align: center;
