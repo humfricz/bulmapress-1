@@ -1,24 +1,26 @@
 <?php get_header(); ?>
 
-<section class="hero has-text-centered">
-    <div class="hero-body">
-        <div class="container">
-            <p class="title">
+    <div class="hero-body has-text-centered is-paddingless">
+        <div class="container" style="padding: 40px 20px; box-shadow: 0 1px 0 rgba(219, 219, 219, 0.3);">
+            <div class="title">
                 <?php echo get_bloginfo('name'); ?>
-            </p>
-            <p class="subtitle">
+            </div>
+            <div class="subtitle">
                 <?php echo get_bloginfo('description'); ?>
-            </p>
+            </div>
         </div>
     </div>
-</section>
+</section><!-- .hero -->
 
-<?php
-if (have_posts()) :
-    while (have_posts()) : the_post();
-        the_content();
-    endwhile;
-endif;
-?>
+<section class="section">
+    <div class="container">
+
+        <?php
+        if (have_posts()) :
+            while (have_posts()) : the_post();
+                the_content();
+            endwhile;
+        endif;
+        ?>
 
 <?php get_footer(); ?>

@@ -13,3 +13,12 @@
 #sidebar {
     background-color: #00b9eb;
 }
+
+.tag a {
+    color: white;
+    text-decoration: none;
+    transition: none 86ms ease-out 0s ;
+}
+.tag a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}

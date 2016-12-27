@@ -322,6 +322,112 @@ function twentyseventeen_scripts() {
 add_action( 'wp_enqueue_scripts', 'twentyseventeen_scripts' );
 
 
+/**
+ * Customize scripts and styles.
+ */
+
+// google fonts
+wp_register_style('material', '//fonts.googleapis.com/icon?family=Material+Icons', array(), null, 'all');
+wp_enqueue_style('material');
+
+// font-awesome
+wp_register_style('font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array(), null, 'all');
+wp_enqueue_style('font-awesome');
+
+// bulma
+wp_register_style('bulma', '//cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css', array(), null, 'all');
+wp_enqueue_style('bulma');
+
+// jquery
+wp_deregister_script('jquery');
+wp_register_script('jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), null, true);
+wp_enqueue_script('jquery');
+
+// highlight.js
+wp_register_style('highlightjs', '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css', array(), null, 'all');
+wp_enqueue_style('highlightjs');
+wp_register_script('highlightjs', '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js', array(), null, true);
+wp_enqueue_script('highlightjs');
+
+// mathjax
+wp_register_script('mathjax', '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js', array(), null, false);
+wp_enqueue_script('mathjax');
+wp_register_script('mathjax-config', '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/config/TeX-MML-AM_CHTML.js', array(), null, false);
+wp_enqueue_script('mathjax-config');
+
+// main.css
+wp_register_style('main', get_template_directory_uri() . '/css/main.css', array(), null, 'all');
+wp_enqueue_style('main');
+
+// main.js
+wp_register_script('main', get_template_directory_uri() . '/js/main.js', array(), null, true);
+wp_enqueue_script('main');
+
+
+// disable emojicons
+function disable_emojicons_tinymce( $plugins ) {
+    if ( is_array( $plugins ) ) {
+        return array_diff( $plugins, array( 'wpemoji' ) );
+    } else {
+        return array();
+    }
+}
+function disable_wp_emojicons() {
+    // all actions related to emojis
+    remove_action( 'admin_print_styles', 'print_emoji_styles' );
+    remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+    remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+    remove_action( 'wp_print_styles', 'print_emoji_styles' );
+    remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+    remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+    remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+    // filter to remove TinyMCE emojis
+    add_filter( 'tiny_mce_plugins', 'disable_emojicons_tinymce' );
+    // remove dns prefetch (emoji only)
+    add_filter( 'emoji_svg_url', '__return_false' );
+}
+add_action( 'init', 'disable_wp_emojicons' );
+
+// remove dns prefetch (both google and emoji)
+////remove_action( 'wp_head', 'wp_resource_hints', 2 );
+
+// remove dns prefetch (emoji only)
+////add_filter( 'emoji_svg_url', '__return_false' );
+
+// Exclude Pages from Search Results
+function search_filter($query) {
+    if ( !is_admin() && $query->is_main_query() ) {
+        if ($query->is_search) {
+            $query->set('post_type', 'post');
+        }
+    }
+}
+add_action('pre_get_posts','search_filter');
+
+
+
+// Disable use XML-RPC
+add_filter( 'xmlrpc_enabled', '__return_false' );
+
+// Disable X-Pingback to header
+add_filter( 'wp_headers', 'disable_x_pingback' );
+function disable_x_pingback( $headers ) {
+    unset( $headers['X-Pingback'] );
+    return $headers;
+}
+
+// remove rsd link (Really Simple Discovery)
+remove_action( 'wp_head', 'rsd_link' );
+
+// remove wlwmanifest link (Windows Live Writer)
+remove_action( 'wp_head', 'wlwmanifest_link' );
+
+// remove show recent comments
+add_filter( 'show_recent_comments_widget_style', '__return_false' );
+
+//// disable wpautop
+//remove_filter( 'the_content', 'wpautop' );
+//remove_filter( 'the_excerpt', 'wpautop' );
 
 remove_action('wp_head', 'wp_generator');
 

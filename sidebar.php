@@ -1,3 +1,4 @@
+<!-- search form -->
 <?php get_search_form(); ?>
 
 <hr>

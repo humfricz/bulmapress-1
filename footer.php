@@ -69,8 +69,6 @@
 	</div><!-- .container -->
 </footer><!-- .footer -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/bulma.js"></script>
 <?php wp_footer(); ?>
 
 </body>

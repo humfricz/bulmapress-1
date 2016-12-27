@@ -1,6 +1,6 @@
 <?php $unique_id = esc_attr( uniqid( 'search-form-' ) ); ?>
 
-<form role="search" method="get" class="search-form control is-grouped" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+<form role="search" method="get" class="search-form control is-grouped" action="<?php echo esc_url( home_url( '/blog' ) ); ?>">
     <p class="control is-expanded is-marginless">
         <label for="<?php echo $unique_id; ?>">
             <span class="sr-only"><?php echo _x( 'Search for:', 'label' ); ?></span>
