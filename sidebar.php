@@ -83,6 +83,6 @@
         About
     </div>
     <div class="message-body">
-        <?php the_author_meta( 'description' ); ?>
+        <?php echo the_author_meta( 'description', 1 ); ?>
     </div>
 </article>
