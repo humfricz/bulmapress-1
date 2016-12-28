@@ -1,10 +1,34 @@
+/* begin increase font */
 html {
     font-size: 16px;
 }
+/* end increase font */
 
+
+/* begin code snippet style */
+pre code {
+    line-height: 1.5;
+}
 .normal pre code {
     white-space: normal;
 }
+/* end code snippet style */
+
+
+/* begin highlightjs style override */
+.hljs {
+    padding: 16px 20px;
+}
+/* end highlightjs style override */
+
+
+/* begin prism style override */
+pre[class*="language-"] {
+    margin: 0;
+    padding: 0;
+}
+/* end prism style override */
+
 
 /* begin searchform style */
 .search-form .search-field {
@@ -19,11 +43,13 @@ html {
 }
 /* end searchform style */
 
+
 /* begin sidebar style */
 #sidebar {
     background-color: #00b9eb;
 }
 /* end sidebar style */
+
 
 /* begin tag style */
 .tag a {
@@ -35,6 +61,7 @@ html {
     color: rgba(255, 255, 255, 0.7);
 }
 /* end tag style */
+
 
 /* begin commentlist style */
 .media .media-content .content a:not(.button) {
@@ -71,6 +98,7 @@ html {
     padding: 10px 0;
 }
 /* end commentlist style */
+
 
 /* begin delete hide style */
 .wp-admin .delete {
@@ -141,6 +169,7 @@ html {
     color: #363636;
 }
 /* end comment pagination style */
+
 
 /* begin comment form style */
 #reply-title {

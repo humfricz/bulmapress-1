@@ -334,12 +334,6 @@ wp_enqueue_style('material');
 wp_register_style('font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array(), null, 'all');
 wp_enqueue_style('font-awesome');
 
-// prism.js
-wp_register_style('prismjs', get_template_directory_uri() . '/css/prism.css', array(), null, 'all');
-wp_enqueue_style('prismjs');
-wp_register_script('prismjs', get_template_directory_uri() . '/js/prism.js', array(), null, true);
-wp_enqueue_script('prismjs');
-
 // bulma
 wp_register_style('bulma', '//cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css', array(), null, 'all');
 wp_enqueue_style('bulma');
@@ -355,6 +349,12 @@ wp_enqueue_script('jquery');
 //wp_register_script('highlightjs', '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js', array(), null, true);
 //wp_enqueue_script('highlightjs');
 //wp_add_inline_script( 'highlightjs', 'hljs.initHighlightingOnLoad();' );
+
+// prism.js
+wp_register_style('prismjs', get_template_directory_uri() . '/css/prism.css', array(), null, 'all');
+wp_enqueue_style('prismjs');
+wp_register_script('prismjs', get_template_directory_uri() . '/js/prism.js', array(), null, true);
+wp_enqueue_script('prismjs');
 
 // mathjax
 wp_register_script('mathjax', '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js', array(), null, false);
