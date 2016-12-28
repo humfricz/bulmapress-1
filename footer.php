@@ -55,8 +55,9 @@
 			<div class="level-item has-text-centered">
 				<a href="https://plus.google.com/u/0/118080331960200612622" class="icon" aria-label="Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
 			</div>
+            <!--
 			<div class="level-item has-text-centered">
-				<a href="https://www.facebook.com/profile.php?id=100013239162410" class="icon" aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="/" class="icon" aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 			</div>
 			<div class="level-item has-text-centered">
 				<a href="/" class="icon" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
@@ -64,6 +65,7 @@
 			<div class="level-item has-text-centered">
 				<a href="/" class="icon" aria-label="Email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
 			</div>
+			-->
 		</nav><!-- .level -->
 
 	</div><!-- .container -->
