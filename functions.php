@@ -348,6 +348,7 @@ wp_register_style('highlightjs', '//cdnjs.cloudflare.com/ajax/libs/highlight.js/
 wp_enqueue_style('highlightjs');
 wp_register_script('highlightjs', '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js', array(), null, true);
 wp_enqueue_script('highlightjs');
+wp_add_inline_script( 'highlightjs', 'hljs.initHighlightingOnLoad();' );
 
 // mathjax
 wp_register_script('mathjax', '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js', array(), null, false);
