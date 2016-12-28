@@ -343,18 +343,18 @@ wp_deregister_script('jquery');
 wp_register_script('jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), null, true);
 wp_enqueue_script('jquery');
 
-// highlight.js
-wp_register_style('highlightjs', '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css', array(), null, 'all');
-wp_enqueue_style('highlightjs');
-wp_register_script('highlightjs', '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js', array(), null, true);
-wp_enqueue_script('highlightjs');
-wp_add_inline_script( 'highlightjs', 'hljs.initHighlightingOnLoad();' );
+//// highlight.js
+//wp_register_style('highlightjs', '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css', array(), null, 'all');
+//wp_enqueue_style('highlightjs');
+//wp_register_script('highlightjs', '//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js', array(), null, true);
+//wp_enqueue_script('highlightjs');
+//wp_add_inline_script( 'highlightjs', 'hljs.initHighlightingOnLoad();' );
 
-//// prism.js
-//wp_register_style('prismjs', get_template_directory_uri() . '/css/prism.css', array(), null, 'all');
-//wp_enqueue_style('prismjs');
-//wp_register_script('prismjs', get_template_directory_uri() . '/js/prism.js', array(), null, true);
-//wp_enqueue_script('prismjs');
+// prism.js
+wp_register_style('prismjs', get_template_directory_uri() . '/css/prism.css', array(), null, 'all');
+wp_enqueue_style('prismjs');
+wp_register_script('prismjs', get_template_directory_uri() . '/js/prism.js', array(), null, true);
+wp_enqueue_script('prismjs');
 
 // mathjax
 wp_register_script('mathjax', '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js', array(), null, false);
