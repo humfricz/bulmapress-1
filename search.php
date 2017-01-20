@@ -31,4 +31,7 @@
             </div>
         </div>
 
+    </div><!-- .container -->
+</section><!-- .section -->
+
 <?php get_footer(); ?>

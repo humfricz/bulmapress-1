@@ -363,12 +363,12 @@ wp_register_script('mathjax-config', '//cdnjs.cloudflare.com/ajax/libs/mathjax/2
 wp_enqueue_script('mathjax-config');
 
 // main.css
-wp_register_style('main', get_template_directory_uri() . '/css/main.css', array(), null, 'all');
-wp_enqueue_style('main');
+wp_register_style('style', get_template_directory_uri() . '/css/style.css', array(), null, 'all');
+wp_enqueue_style('style');
 
 // main.js
-wp_register_script('main', get_template_directory_uri() . '/js/main.js', array(), null, true);
-wp_enqueue_script('main');
+wp_register_script('script', get_template_directory_uri() . '/js/script.js', array(), null, true);
+wp_enqueue_script('script');
 
 
 // disable emojicons

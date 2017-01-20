@@ -16,4 +16,7 @@
     get_template_part( 'content-page', get_post_format() );
 endwhile; endif; ?>
 
+    </div><!-- .container -->
+</section><!-- .section -->
+
 <?php get_footer(); ?>

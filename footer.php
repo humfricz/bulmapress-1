@@ -1,10 +1,7 @@
-
-	</div><!-- .container -->
-</section><!-- .section -->
-
 <footer class="footer">
 	<div class="container">
 
+        <!--
 		<div class="columns">
 			<div class="column">
 				<div class="notification is-dark has-text-centered">
@@ -34,11 +31,12 @@
 					</p>
 				</div>
 			</div>
-		</div><!-- .columns -->
+		</div>
+        -->
 
 		<nav class="level is-mobile">
 			<div class="level-item has-text-centered">
-				<a href="https://blog.paul.kim/feed" class="icon" aria-label="RSS"><i class="fa fa-rss" aria-hidden="true"></i></a>
+				<a href="/feed" class="icon" aria-label="RSS"><i class="fa fa-rss" aria-hidden="true"></i></a>
 			</div>
 			<div class="level-item has-text-centered">
 				<a href="https://github.com/kimbaudi" class="icon" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>

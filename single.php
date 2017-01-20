@@ -25,4 +25,7 @@
         endif;
         ?>
 
+    </div><!-- .container -->
+</section><!-- .section -->
+
 <?php get_footer(); ?>
