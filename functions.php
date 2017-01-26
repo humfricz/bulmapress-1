@@ -522,7 +522,8 @@ add_filter('next_posts_link_attributes', 'posts_link_attributes');
 add_filter('previous_posts_link_attributes', 'posts_link_attributes');
 
 function posts_link_attributes() {
-	return 'class="button is-light"';
+    //return 'class="button is-dark"';
+    return 'class="button is-light"';
 }
 
 remove_action('wp_head', 'wp_generator');
