@@ -78,10 +78,14 @@ pre[class*="language-"] {
     border-bottom-left-radius: 0;
 }
 .search-field.input.is-active, .search-field.input:active, .search-field.input:focus {
-    border-color: #07c;
     border-color: #3af;
 }
-
+.menu-list a {
+    color: #3af;
+}
+.menu-list a:hover {
+    color: #07c;
+}
 /* end searchform style */
 
 
