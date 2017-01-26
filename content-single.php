@@ -1,4 +1,10 @@
-
+<!--
+single blog post content
+single.php is the parent of this page
+https://blog.paul.kim/hello-world
+https://blog.paul.kim/nvm-cheatsheet
+https://blog.paul.kim/toontastic-3d
+-->
 <?php
 if (get_post_thumbnail_id()) {
     ?>
@@ -9,27 +15,11 @@ if (get_post_thumbnail_id()) {
 }
 ?>
 
-<hr>
-
-Tags:
-
-<?php the_tags('<div><span class="tag is-dark">', '</span></div><div><span class="tag is-dark">', '</span></div>'); ?>
-
-<hr>
-
-Categories:
-
-<?php echo get_the_category_list(); ?>
-
-<article id="post-<?php the_ID(); ?>"></article>
-
-<hr>
-
-Content:
+<!--TODO: categories-->
+<!--<p>Categories:</p>-->
+<?php //echo get_the_category_list(); ?>
 
 <?php the_content(); ?>
-
-<hr>
 
 <blockquote>
     <cite>Written by Paul Kim<br>
