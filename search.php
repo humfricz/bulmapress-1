@@ -1,3 +1,7 @@
+<!--
+search page template
+https://blog.paul.kim/?s=foo
+-->
 <?php get_header(); ?>
 
     <div class="hero-body has-text-centered is-paddingless">
@@ -19,6 +23,16 @@
                     while (have_posts()) : the_post();
                         get_template_part('content', get_post_format());
                     endwhile;
+                ?>
+                    <!-- https://codex.wordpress.org/Pagination -->
+                    <nav class="pagination">
+		                <?php previous_posts_link( 'Newer posts' ); ?>
+                        <ul>
+                            <li></li>
+                        </ul>
+		                <?php next_posts_link( 'Older posts' ); ?>
+                    </nav>
+                <?php
                 else :
                     ?>
                     <h3 class="title has-text-centered">Sorry, no results were found!</h3>

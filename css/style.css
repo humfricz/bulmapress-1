@@ -65,16 +65,23 @@ pre[class*="language-"] {
 
 
 /* begin searchform style */
+.search-form.control {
+    margin-bottom: 20px;
+}
 .search-form .search-field {
     border-radius: 3px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-
 .search-form .search-submit {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+.search-field.input.is-active, .search-field.input:active, .search-field.input:focus {
+    border-color: #07c;
+    border-color: #3af;
+}
+
 /* end searchform style */
 
 
