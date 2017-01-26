@@ -1,8 +1,7 @@
 <!-- search form -->
 <?php get_search_form(); ?>
 
-<hr>
-
+<!-- recent posts -->
 <article class="message">
     <div class="message-header">
         Recent Posts
@@ -26,8 +25,7 @@
     </div>
 </article>
 
-<hr>
-
+<!-- recent comments -->
 <article class="message">
     <div class="message-header">
         Recent Comments
@@ -56,8 +54,7 @@
     </div>
 </article>
 
-<hr>
-
+<!-- archives -->
 <article class="message">
     <div class="message-header">
         Archives
@@ -76,8 +73,7 @@
     </div>
 </article>
 
-<hr>
-
+<!-- about -->
 <article class="message">
     <div class="message-header">
         About
