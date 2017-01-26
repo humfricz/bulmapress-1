@@ -22,4 +22,3 @@
         <?php the_excerpt(); ?>
     </p>
 </div>
-
