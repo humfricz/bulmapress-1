@@ -573,6 +573,13 @@ pre[class*="language-"] {
     margin: 0;
     padding: 0;
 }
+pre[class*="language-"] .tag {
+    display: inline;
+    line-height: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: inherit;
+}
 /* end prismjs overwrite */
 
 
