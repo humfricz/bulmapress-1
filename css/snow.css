@@ -1,0 +1,122 @@
+html {
+  margin: 0;
+  padding: 0;
+  overflow-y: visible;
+  height: 100%;
+  background-color: #A2DCFF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+}
+
+canvas {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body, pre, pre code {
+  color: #234F68;
+}
+
+strong {
+  color: #234F68;
+}
+
+.subtitle strong {
+  color: #234F68;
+}
+
+.hero, .section, .box, .footer {
+  background-color: transparent;
+}
+
+.box {
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(35, 79, 104, 0.1), 0 0 0 1px rgba(35, 79, 104, 0.1);
+  display: block;
+  padding: 20px;
+}
+
+a.box:focus, a.box:hover {
+  box-shadow: 0 2px 3px rgba(35, 79, 104, 0.1), 0 0 0 1px rgba(35, 79, 104, 0.7);
+}
+
+a.box:active {
+  box-shadow: 0 1px 2px rgba(35, 79, 104, 0.2) inset, 0 0 0 1px rgba(35, 79, 104, 0.7);
+}
+
+.hero .nav {
+  box-shadow: 0 1px 0 rgba(35, 79, 104, 0.7);
+}
+
+.title, .subtitle {
+  color: #234F68;
+}
+
+.content {
+  color: #234F68;
+}
+
+.content a:not(.button) {
+  border-bottom: 1px solid #234F68;
+}
+
+.content a:visited:not(.button) {
+  color: #234F68;
+}
+
+.content a:hover:not(.button) {
+  border-bottom-color: #234F68;
+}
+
+.content blockquote {
+  color: #234F68;
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  color: #234F68;
+}
+
+hr {
+  background-color: #234F68;
+}
+
+.nav-item a, a.nav-item {
+  color: rgba(35, 79, 104, 0.7);
+}
+
+.nav-item a.is-active, .nav-item a:hover, a.nav-item.is-active, a.nav-item:hover {
+  color: #234F68;
+}
+
+.footer a, .footer a:visited {
+  color: rgba(35, 79, 104, 0.7);
+}
+.footer a:hover, .footer a:visited:hover {
+  color: #234F68;
+}
+
+a {
+  color: #234F68;
+  text-decoration: none;
+  transition: none 86ms ease-out 0s ;
+}
+
+.button, a:hover, strong, table th {
+  color: #234F68;
+}
+
+.modal .box {
+  background-color: white;
+  color: white;
+}
+
+.modal-card-title {
+  color: #234F68;
+}
