@@ -12,18 +12,20 @@
     </div>
 </section><!-- .hero -->
 
-<section class="section">
-    <div class="container">
+<section class="hero is-bold is-medium">
+    <div class="hero-body">
+        <div class="container">
 
-        <?php
-        if (have_posts()) :
-            while (have_posts()) : the_post();
-                the_content();
-            endwhile;
-        endif;
-        ?>
+            <?php
+            if (have_posts()) :
+                while (have_posts()) : the_post();
+                    the_content();
+                endwhile;
+            endif;
+            ?>
 
-    </div><!-- .container -->
-</section><!-- .section -->
+        </div><!-- .container -->
+    </div><!-- .hero-body -->
+</section><!-- .hero.is-bold.is-medium -->
 
 <?php get_footer(); ?>
