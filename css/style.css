@@ -26,15 +26,24 @@ pre code {
 .normal pre code {
     white-space: normal;
 }
-.gutter.gl {
-    float: left;
+.linenos pre code {
+    padding: 16px 20px 16px 0;
 }
 /* end code snippet style */
 
 
 /* begin rouge overwrite */
-.linenos pre code {
-    padding: 16px 20px 16px 0;
+figure.highlight > pre > code > table {
+    width: auto;
+}
+figure.highlight > pre > code > table td.gutter.gl {
+    padding-right: 20px;
+}
+figure.highlight > pre > code > table pre.lineno {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 /* end rouge overwrite */
 
